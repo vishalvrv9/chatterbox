@@ -43,12 +43,12 @@ class Chat extends React.Component{
           <div className="col">
             <div className="card">
               <div className="card-body">
-                <div className="card-title"><u><b>Chat Messages</b></u></div>
+                <div className="card-title"><u><b><h2>Chat Messages</h2></b></u></div>
                 <hr/>
                 <div className='messages'>
                 {this.state.messageList.map((message) =>
                   {return(
-                    <div> {message.author} : {message.message} </div>
+                    <div> <b>{message.author}</b> : {message.message} </div>
                   )})
                 }
 
